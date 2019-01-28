@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/35454889/laravel-5-how-do-i-use-forms-in-my-views
+
+composer require laravelcollective/html
+go config/app.php
+addd 'Collective\Html\HtmlServiceProvider',

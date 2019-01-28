@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'details'                => 'Details',
+    'update'                => 'Modifier',
+    'titleproject'                => 'Gestion Universite ',
+    'msg_start'  =>         'Salut! Commençons',
+    'msg_connected'  =>         'Connectez-vous pour continuer.',
+    'mail'  =>         'Adresse mail',
+    'password'  =>         'Mot de passe',
+    'connexion'  =>         'Connexion',
+    'remember'  =>         'Se souvenir de moi',
+    'passwordlost'  =>         'Mot de passe oublier',
+    'resetpassword'  =>         'Reinitialiser mot de passe',
+    'sendlink'  =>         'Envoyer le lien de reinitialisation',
+    'register'  =>         'S\'inscrire',
+    'name'  =>         'Nom complet',
+    'passwordconfirm'  =>         'Confirmer Mot de passe',
+    'logout'  =>         'Deconnexion',
+    'home'  =>         'Accueil',
+    'etudiant'  =>         'Etudiant',
+    'copyright'  =>         'Tous droit reserver © 2018 ',
+    'dashboard'  =>         'Accueil',
+    'deschome'  =>         'Donnes les informations relatives a la gestion de l\'ecole',
+    'nbetu'  =>         'Nombre d\'etudiant',
+    'nbtrans'  =>         'Nombre inscription',
+    'nbprof'  =>         'Nombres de professeur',
+    'delete'  =>         'Supprimer',
+    'save'  =>         'Enregistrer',
+    'cancel'  =>         'Annuler',
+    'edit'  =>         'Editer',
+
+];
