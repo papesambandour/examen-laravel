@@ -35,7 +35,7 @@ class EtudiantController extends Controller
     }
     public function add(){
 
-        $listeNiveau = Niveau::all();
+        $listeNiveau = Niveau::orderBy('libelle','ASC')->get();
         return view('etudiant.add',compact('listeNiveau'));
 
     }
@@ -46,7 +46,7 @@ class EtudiantController extends Controller
     }
     public function edit($id){
         $etudiant = Etudiant::findOrFail($id);
-        $listeNiveau = Niveau::all();
+        $listeNiveau = Niveau::orderBy('libelle','ASC')->get();
         return view('etudiant/edit',compact(['etudiant','listeNiveau']));
 
     }

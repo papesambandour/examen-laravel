@@ -57,6 +57,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/user/edit/{id}', 'UserController@edit')->name('edituser')->where('id','[0-9]+');
     Route::post('/user/update/{id}', 'UserController@update')->name('updateuser')->where('id','[0-9]+');
     Route::get('/user/delete/{id}', 'UserController@delete')->name('deleteuser')->where('id','[0-9]+');
+
+
+
+    Route::get('/about', 'HomeController@about')->name('about');
+    Route::get('/getchart', 'HomeController@getchart')->name('getchart');
 });
 
 

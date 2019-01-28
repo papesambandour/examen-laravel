@@ -154,6 +154,12 @@
               <i class="mdi mdi-account menu-icon"></i>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url('/about')}}">
+              <span class="menu-title">A-propos</span>
+              <i class="mdi mdi-ear-hearing menu-icon"></i>
+            </a>
+          </li>
 
         </ul>
       </nav>
