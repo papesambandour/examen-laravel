@@ -69,6 +69,7 @@ return [
                         Telephone: 221781115159<br>
                         Site : ",
     'choice'=>"Faite votre choix",
+    'errormessagelogin'=>'Erreur mot de passe ou email',
 
 
 ];

@@ -28,12 +28,19 @@
             <div class="row w-100">
                 <div class="col-lg-4 mx-auto">
 
+
                     <div class="auth-form-light text-left p-5">
                         <div class="brand-logo text-success" style="font-size: 18px;font-weight: bold">
                             {{trans('commun.titleproject')}}
                         </div>
+
                         <h4>{{trans('commun.msg_start')}}</h4>
                         <h6 class="font-weight-light">{{trans('commun.msg_connected')}}</h6>
+                        @if(isset($error))
+                            <div class="alert alert-danger">
+                                {{trans('commun.errormessagelogin')}}
+                            </div>
+                        @endif
 
                         <form class="pt-3" method="POST" action="{{ route('login') }}">
                             @csrf
@@ -104,6 +111,9 @@
 <!-- inject:js -->
 <script src="{{asset('admin/js/off-canvas.js')}}"></script>
 <script src="{{asset('admin/js/misc.js')}}"></script>
+<script>
+    setTimeout(function(){$('.alert-danger').remove()},3000)
+</script>
 </body>
 
 </html>

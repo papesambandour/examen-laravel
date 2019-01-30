@@ -26,7 +26,6 @@
                     <div class="card-header">{{trans('commun.register') }}</div>
 
                     <div class="card-body">
-                        {{dd($errors)}}
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
 
