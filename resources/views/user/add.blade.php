@@ -12,6 +12,7 @@
 
 @section('content')
 
+
     <div class="row">
         <div class="col-md-6 grid-margin stretch-card offset-3">
 

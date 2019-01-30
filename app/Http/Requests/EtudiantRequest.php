@@ -24,8 +24,8 @@ class EtudiantRequest extends FormRequest
     public function rules()
     {
         return [
-            'prenom' => 'required|max:255|min:5',
-            'nom' => 'required|max:255|min:5',
+            'prenom' => 'required|max:255|min:1',
+            'nom' => 'required|max:255|min:1',
             'niveau_id' => 'required|numeric'
         ];
     }
