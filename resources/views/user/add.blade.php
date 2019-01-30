@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_add')}}
+    {{trans('commun.title_user')}}
 @endsection
 @section('css')
 
@@ -18,11 +18,11 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h4 class="card-title text-center">Ajout niveau</h4>
+                    <h4 class="card-title text-center">{{trans('commun.user_add')}}</h4>
                     <form class="forms-sample" action="{{url('/user/save')}}" method="post">
                         <div class="form-group">
-                            <label for="nom">Nom complet</label>
-                            <input type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" name="name" placeholder="nom complete" value="{{ old('name') }}" required>
+                            <label for="nom">{{trans('commun.fullname')}}</label>
+                            <input type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" name="name" placeholder="{{trans('commun.fullname')}}" value="{{ old('name') }}" required>
                             @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -31,8 +31,9 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" name="email" placeholder="email" value="{{ old('email') }}" >
+                            <label for="email">{{trans('commun.email')}}</label>
+
+                            <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" name="{{trans('commun.email')}}" placeholder="email" value="{{ old('email') }}" >
                             @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -41,8 +42,14 @@
 
                         </div>
 
+
+
+
                         <button type="submit" class="btn btn-gradient-primary mr-2">{{trans('commun.save')}}</button>
                         <button class="btn btn-light">{{trans('commun.cancel')}}</button>
+                        <br>
+                        <br>
+                        <small>{{trans('commun.daefutlpassword')}}</small>
                     </form>
                 </div>
             </div>

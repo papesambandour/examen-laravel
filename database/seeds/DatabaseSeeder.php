@@ -17,15 +17,18 @@ class DatabaseSeeder extends Seeder
             'email'=>'papesambandour@hotmail.com',
             'password'=>bcrypt('Admin1122'),
         ]);
+
         $faker = Faker::create();
 
         for ($i = 0; $i < 100 ; $i++)
         {
             $firstName = $faker->firstName;
             $lastName = $faker->lastName;
+            $niveau = \App\Niveau::inRandomOrder()->first();
             \App\Etudiant::create([
                 'prenom'=>$firstName,
-                'nom'=>$lastName
+                'nom'=>$lastName,
+                'niveau_id'=>$niveau->id
             ]);
         }
 

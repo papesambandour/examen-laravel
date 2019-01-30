@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_details')}}
+    {{trans('commun.title_etudent')}}
 @endsection
 @section('css')
 
@@ -21,10 +21,10 @@
                     <table class="table table-striped table-active">
                         <thead>
                         <tr>
-                            <td>Id</td>
-                            <td>Nom etudiant</td>
-                            <td>Prenom etudiant</td>
-                            <td>Niveaux</td>
+                            <td>{{trans('etudiant.id')}}</td>
+                            <td>{{trans('etudiant.l_name')}}</td>
+                            <td>{{trans('etudiant.f_name')}}</td>
+                            <td>{{trans('etudiant.level')}}</td>
                         </tr>
                         </thead>
                         <tbody>

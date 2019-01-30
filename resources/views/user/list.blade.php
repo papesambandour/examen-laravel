@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.listetu')}}
+    {{trans('commun.title_user')}}
 @endsection
 @section('css')
 
@@ -14,18 +14,18 @@
     <div class="row">
         @if(isset($add))
             <div class="alert alert-success">
-                {{trans('etudiant.msm_succes_saved')}}
+                {{trans('commun.user_msm_succes_saved')}}
             </div>
         @endif
 
             @if(isset($edit))
                 <div class="alert alert-success">
-                    {{trans('etudiant.msm_succes_updated')}}
+                    {{trans('commun.user_msm_succes_updated')}}
                 </div>
             @endif
             @if(isset($delete))
                 <div class="alert alert-success">
-                    {{trans('etudiant.msm_succes_delete')}}
+                    {{trans('commun.user_msm_succes_delete')}}
                 </div>
             @endif
     </div>
@@ -34,13 +34,13 @@
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title"> <a href="{{url('/user/add')}}" class="badge badge-gradient-danger btn" id="item_time">Ajout Utilisateur</a></h4>
+                    <h4 class="card-title"> <a href="{{url('/user/add')}}" class="badge badge-gradient-danger btn" id="item_time">{{trans('commun.user_add')}}</a></h4>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Nom complet</th>
-                                <th>Email</th>
+                                <th>{{trans('commun.fullname')}}</th>
+                                <th>{{trans('commun.email')}}</th>
                                 <th style="text-align: center">{{trans('etudiant.action')}}</th>
                             </tr>
                             </thead>

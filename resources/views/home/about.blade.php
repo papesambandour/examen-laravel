@@ -1,7 +1,7 @@
 @extends('layout-admin')
 
 @section('title')
-    Gestion Universite
+    {{trans('commun.title_about')}}
 @endsection
 @section('css')
 
@@ -14,12 +14,12 @@
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
                 <i class="mdi mdi-home"></i>
               </span>
-            A Propos
+           {{trans('commun.about')}}
         </h3>
         <nav aria-label="breadcrumb">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>{{trans('commun.deschome')}}
+                    <span></span>{{trans('commun.descabout')}}
                     <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
                 </li>
             </ul>

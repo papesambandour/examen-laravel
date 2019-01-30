@@ -12,8 +12,7 @@ class HomeController extends Controller
 {
    public function index()
    {
-
-      $nbetudiant = Etudiant::count();
+       $nbetudiant = Etudiant::count();
        $nbNiveaux= Niveau::count();
        return view('home.index',compact(['nbetudiant','nbNiveaux']));
    }

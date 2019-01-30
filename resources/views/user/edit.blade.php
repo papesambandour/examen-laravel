@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_update')}}
+    {{trans('commun.title_user')}}
 @endsection
 @section('css')
 
@@ -16,17 +16,17 @@
         <div class="col-md-6 grid-margin stretch-card offset-3">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Mise a jour niveaux</h4>
+                    <h4 class="card-title text-center">{{trans('commun.user_update')}}</h4>
 
                     <form class="forms-sample" action="{{url('/user/update').'/'.$user->id}}" method="post">
                         <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" class="form-control" id="name" name="name" value="{{$user->name}}" placeholder="Nom complet" required>
+                            <label for="name">{{trans('commun.fullname')}}</label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{$user->name}}" placeholder="{{trans('commun.fullname')}}" required>
 
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" value="{{$user->email}}" placeholder="Email" required>
+                            <label for="email">{{trans('commun.email')}}</label>
+                            <input type="email" class="form-control" id="email" name="email" value="{{$user->email}}" placeholder="{{trans('commun.email')}}" required>
 
                         </div>
 

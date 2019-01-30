@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_add')}}
+    {{trans('commun.title_etudent')}}
 @endsection
 @section('css')
 
@@ -40,8 +40,8 @@
                             @endif
                         </div>
                         <div class="form-group">
-                            <label for="niveau_id">Niveau</label>
-                            <select id="niveau_id" name="niveau_id" CLASS="form-control" required>
+                            <label for="niveau_id">{{trans('etudiant.level')}}</label>
+                            <select id="niveau_id" name="niveau_id" class="form-control" required>
                                 <option value="" hidden disabled selected>--Faite votre choix--</option>
                                 @foreach($listeNiveau as $niveau)
                                  <option value="{{$niveau->id}}">{{$niveau->libelle}}</option>

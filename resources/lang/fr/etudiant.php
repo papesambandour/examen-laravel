@@ -14,4 +14,8 @@ return [
     'gobacklist'                => 'Retourner sur la liste des etudiant',
     'listetu'                => 'Liste des etudiants',
 
+    //new
+    'level'                => 'Niveaux',
+    'id'                => 'Id',
+
 ];

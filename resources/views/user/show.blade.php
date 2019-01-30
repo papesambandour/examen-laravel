@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_details')}}
+    {{trans('commun.title_user')}}
 @endsection
 @section('css')
 
@@ -16,14 +16,14 @@
         <div class="col-md-6 grid-margin stretch-card offset-3">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Retourner sur la liste</h4>
+                    <h4 class="card-title text-center">{{trans('commun.userdetails')}}</h4>
 
                     <table class="table table-striped table-active">
                         <thead>
                         <tr>
-                            <td>Nom complete</td>
-                            <td>Email</td>
-                            <td>id</td>
+                            <td>{{trans('commun.fullname')}}</td>
+                            <td>{{trans('commun.email')}}</td>
+                            <td>{{trans('etudiant.id')}}</td>
                         </tr>
                         </thead>
                         <tbody>
@@ -35,7 +35,7 @@
                         </tr>
                         </tbody>
                         <tfoot>
-                        <a class="btn btn-primary btn-xs" href="{{url('/user/list')}}">{{trans('etudiant.gobacklist')}}</a>
+                        <a class="btn btn-primary btn-xs" href="{{url('/user/list')}}">{{trans('commun.goback')}}</a>
                         </tfoot>
                     </table>
                 </div>

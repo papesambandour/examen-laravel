@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_details')}}
+    {{trans('commun.title_level')}}
 @endsection
 @section('css')
 
@@ -16,12 +16,12 @@
         <div class="col-md-6 grid-margin stretch-card offset-3">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Retourner sur la liste</h4>
+                    <h4 class="card-title text-center">{{trans('commun.details_niveau')}}</h4>
 
                     <table class="table table-striped table-active">
                         <thead>
                         <tr>
-                            <td>Niveaux</td>
+                            <td>{{trans('etudiant.level')}}</td>
                         </tr>
                         </thead>
                         <tbody>
@@ -32,7 +32,7 @@
                         </tr>
                         </tbody>
                         <tfoot>
-                        <a class="btn btn-primary btn-xs" href="{{url('/niveau/list')}}">{{trans('etudiant.gobacklist')}}</a>
+                        <a class="btn btn-primary btn-xs" href="{{url('/niveau/list')}}">{{trans('commun.goback')}}</a>
                         </tfoot>
                     </table>
                 </div>

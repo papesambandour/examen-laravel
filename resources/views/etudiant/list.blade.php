@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.listetu')}}
+    {{trans('commun.title_etudent')}}
 @endsection
 @section('css')
 
@@ -41,7 +41,7 @@
                             <tr>
                                 <th>{{trans('etudiant.l_name')}}</th>
                                 <th>{{trans('etudiant.f_name')}}</th>
-                                <th>Niveaux</th>
+                                <th>{{trans('etudiant.level')}}</th>
                                 <th style="text-align: center">{{trans('etudiant.action')}}</th>
                             </tr>
                             </thead>

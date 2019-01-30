@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>@yield('title','GESTION ECOLE')</title>
+  <title>@yield('title',trans('commun.title'))</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('admin/vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/vendors/css/vendor.bundle.base.css')}}}">
@@ -144,19 +144,19 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('/niveau/list')}}">
-              <span class="menu-title">Niveaux</span>
+              <span class="menu-title">{{trans('etudiant.level')}}</span>
               <i class="mdi mdi-chart-bar menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('/user/list')}}">
-              <span class="menu-title">Utilisateur</span>
+              <span class="menu-title">{{trans('commun.usertitle')}}</span>
               <i class="mdi mdi-account menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('/about')}}">
-              <span class="menu-title">A-propos</span>
+              <span class="menu-title">{{trans('commun.about')}}</span>
               <i class="mdi mdi-ear-hearing menu-icon"></i>
             </a>
           </li>

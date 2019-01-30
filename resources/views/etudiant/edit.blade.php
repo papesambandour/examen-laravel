@@ -4,7 +4,7 @@
 @extends('layout-admin')
 
 @section('title')
-    {{trans('etudiant.title_update')}}
+    {{trans('commun.title_etudent')}}
 @endsection
 @section('css')
 
