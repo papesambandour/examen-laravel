@@ -61,18 +61,17 @@
                                 </div>
 
                                 @if (Route::has('password.request'))
-                                    <a class="auth-link text-black" href="{{ route('password.request') }}">
-                                        {{ trans('commun.passwordlost')}}
-                                    </a>
+                                        <a class="auth-link text-black" href="{{ route('register') }}">
+                                            {{ trans('commun.register')}}
+                                        </a>
+
                                 @endif
                                 <br>
 
                             </div>
                             <div class="my-2 d-flex justify-content-between align-items-center">
                                 <div class="form-check">
-                                    <a class="auth-link text-black" href="{{ route('register') }}">
-                                        {{ trans('commun.register')}}
-                                    </a>
+
                                 </div>
 
                             </div>
