@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}" />
+
 </head>
 
 <body style="background: url('/admin/images/bg.jpg')">
@@ -25,6 +26,7 @@
                     <div class="card-header">{{trans('commun.register') }}</div>
 
                     <div class="card-body">
+                        {{dd($errors)}}
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
 

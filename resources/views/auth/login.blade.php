@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}" />
+    <style>
+        .content-wrapper{
+            background: transparent !important;
+        }
+    </style>
 </head>
 
 <body style="background: url('/admin/images/bg.jpg')">
@@ -22,12 +27,14 @@
         <div class="content-wrapper d-flex align-items-center auth">
             <div class="row w-100">
                 <div class="col-lg-4 mx-auto">
+
                     <div class="auth-form-light text-left p-5">
                         <div class="brand-logo text-success" style="font-size: 18px;font-weight: bold">
                             {{trans('commun.titleproject')}}
                         </div>
                         <h4>{{trans('commun.msg_start')}}</h4>
                         <h6 class="font-weight-light">{{trans('commun.msg_connected')}}</h6>
+
                         <form class="pt-3" method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="form-group">
