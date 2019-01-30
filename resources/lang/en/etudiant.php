@@ -13,4 +13,7 @@ return [
     'msgdelete'                => 'Do you want to dismiss the student?',
     'gobacklist'                => 'Return to the list of students',
     'listetu'                => 'Student list',
+
+    'level'                => 'Level',
+    'id'                => 'Id',
 ];

@@ -35,10 +35,7 @@
                 <div class="card-body">
                     <h5 class="h5">Pape samba ndour</h5>
                     <div>
-                        Etudiant en DITI 5<br>
-                        Developpeur Chez payexpresse,empire digital<br>
-                        Email: pape.ndour@empiredigital.info<br>
-                        Telephone: 22177729382
+                        {!!  trans('commun.dest_pape')!!}
                     </div>
                 </div>
             </div>
@@ -48,10 +45,7 @@
                 <div class="card-body">
                     <h5 class="h5">Mamadou Cisse</h5>
                     <div>
-                        Etudiant en DITI 5<br>
-                        Developpeur Geomaticien<br>
-                        Email: cissemam88@gmail.com<br>
-                        Telephone: 777293282
+                       {!!  trans('commun.dest_cisse')!!}
                     </div>
                 </div>
             </div>

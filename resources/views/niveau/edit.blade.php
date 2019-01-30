@@ -21,7 +21,7 @@
                     <form class="forms-sample" action="{{url('/niveau/update').'/'.$niveau->id}}" method="post">
                         <div class="form-group">
                             <label for="libelle">{{trans('commun.libelle')}}</label>
-                            <input type="text" class="form-control" id="libelle" name="libelle" value="{{$niveau->libelle}}" placeholder="{{trans('commun.level')}}">
+                            <input required type="text" class="form-control" id="libelle" name="libelle" value="{{$niveau->libelle}}" placeholder="{{trans('commun.level')}}">
 
                         </div>
 

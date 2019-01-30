@@ -22,7 +22,7 @@
                     <form class="forms-sample" action="{{url('/etudiants/save')}}" method="post">
                         <div class="form-group">
                             <label for="nom">{{trans('etudiant.l_name')}}</label>
-                            <input type="text" class="form-control{{ $errors->has('nom') ? ' is-invalid' : '' }}" id="nom" name="nom" placeholder="{{trans('etudiant.l_name')}}" value="{{ old('nom') }}" >
+                            <input required type="text" class="form-control{{ $errors->has('nom') ? ' is-invalid' : '' }}" id="nom" name="nom" placeholder="{{trans('etudiant.l_name')}}" value="{{ old('nom') }}" >
                             @if ($errors->has('nom'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('nom') }}</strong>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="prenom">{{trans('etudiant.f_name')}}</label>
-                            <input type="text" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" id="prenom" name="prenom" value="{{ old('prenom') }}"  placeholder="{{trans('etudiant.f_name')}}">
+                            <input required type="text" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" id="prenom" name="prenom" value="{{ old('prenom') }}"  placeholder="{{trans('etudiant.f_name')}}">
                             @if ($errors->has('prenom'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('prenom') }}</strong>
@@ -42,7 +42,7 @@
                         <div class="form-group">
                             <label for="niveau_id">{{trans('etudiant.level')}}</label>
                             <select id="niveau_id" name="niveau_id" class="form-control" required>
-                                <option value="" hidden disabled selected>--Faite votre choix--</option>
+                                <option value="" hidden disabled selected>--{{trans('choce')}}--</option>
                                 @foreach($listeNiveau as $niveau)
                                  <option value="{{$niveau->id}}">{{$niveau->libelle}}</option>
                                 @endforeach
@@ -51,7 +51,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-gradient-primary mr-2">{{trans('commun.save')}}</button>
-                        <button class="btn btn-light">{{trans('commun.cancel')}}</button>
+                        <button type="reset" class="btn btn-light">{{trans('commun.cancel')}}</button>
                     </form>
                 </div>
             </div>

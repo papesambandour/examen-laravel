@@ -22,7 +22,7 @@
                     <form class="forms-sample" action="{{url('/niveau/save')}}" method="post">
                         <div class="form-group">
                             <label for="nom">{{trans('commun.libelle')}}</label>
-                            <input type="text" class="form-control{{ $errors->has('libelle') ? ' is-invalid' : '' }}" id="libelle" name="libelle" placeholder="{{trans('commun.libelle')}}" value="{{ old('libelle') }}" >
+                            <input required type="text" class="form-control{{ $errors->has('libelle') ? ' is-invalid' : '' }}" id="libelle" name="libelle" placeholder="{{trans('commun.libelle')}}" value="{{ old('libelle') }}" >
                             @if ($errors->has('libelle'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('nom') }}</strong>
@@ -32,7 +32,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-gradient-primary mr-2">{{trans('commun.save')}}</button>
-                        <button class="btn btn-light">{{trans('commun.cancel')}}</button>
+                        <button type="reset" class="btn btn-light">{{trans('commun.cancel')}}</button>
                     </form>
                 </div>
             </div>

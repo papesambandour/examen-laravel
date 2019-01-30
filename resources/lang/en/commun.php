@@ -30,4 +30,46 @@ return [
     'cancel'  =>         'Cancel',
     'edit'  =>         'Update',
 
+
+    //New
+    'statisEt'  =>         'Student statistics',
+    'nv_msm_succes_saved'                => 'Levels save successfully',
+    'nv_msm_succes_updated'                => 'Levels updated successfully',
+    'nv_msm_succes_delete'                => 'Levels successfully delete',
+    'nv_add'                => 'Adding level',
+    'libelle'                => 'Wording',
+    'goback'                => 'Return to the list',
+    'details_niveau'                => 'Details Levels',
+    'nv_update'                => 'Update levels',
+
+    'user_add'                => 'Adding user',
+    'user_update'                => 'User update',
+    'user_msm_succes_saved'                => 'User successfully register',
+    'user_msm_succes_updated'                => 'User updated successfully',
+    'user_msm_succes_delete'                => 'User successfully delete',
+    'fullname'                => 'Full Name',
+    'email'                => 'Email',
+    'daefutlpassword'                => 'Default password: "passer"',
+    'userdetails'                => 'User Details',
+    'usertitle'                => 'User',
+    'about'                => 'About',
+    'title'                => 'University Management',
+    'title_about'                => 'Page About',
+    'title_level'                => 'Level Management',
+    'title_user'                => 'User Management',
+    'title_etudent'                => 'Student management',
+    'descabout'                => 'Give information about group members',
+    'dest_pape'                => " Student in DITI 5<br>
+                        Developer At payexpresse,empire digital<br>
+                        Email: pape.ndour@empiredigital.info<br>
+                        Phone: 22177729382<br>
+                        Web Site : <a href='https://payexpresse.com' target='_blank'>https://payexpresse.com</a>| <a href='https://empiredigital.info' target='_blank'>https://empiredigital.info</a>",
+    'dest_cisse'                => " Student IN DITI 5<br>
+                        geomaticians<br>
+                        Email: cissemam88@gmail.com<br>
+                        Phone: 221781115159<br>
+                        Web Site : ",
+    'choice'=>"Faite votre choix",
+
+
 ];

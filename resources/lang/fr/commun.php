@@ -58,6 +58,17 @@ return [
     'title_user'                => 'Gestion des utilisateurs',
     'title_etudent'                => 'Gestion des etudiants',
     'descabout'                => 'Donnes les informations sur les membres du groupe',
+    'dest_pape'                => " Etudiant en DITI 5<br>
+                        Developpeur Chez payexpresse,empire digital<br>
+                        Email: pape.ndour@empiredigital.info<br>
+                        Telephone: 22177729382<br>
+                        Site : <a href='https://payexpresse.com' target='_blank'>https://payexpresse.com</a>| <a href='https://empiredigital.info' target='_blank'>https://empiredigital.info</a>",
+    'dest_cisse'                => " Etudiant en DITI 5<br>
+                        Geomaticien<br>
+                        Email: cissemam88@gmail.com<br>
+                        Telephone: 221781115159<br>
+                        Site : ",
+    'choice'=>"Faite votre choix",
 
 
 ];

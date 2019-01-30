@@ -22,11 +22,11 @@
                         <div class="form-group">
                             <label for="nom">{{trans('etudiant.l_name')}}</label>
                             <input type="hidden" name="id" id="id">
-                            <input type="text" class="form-control" id="nom" name="nom" value="{{$etudiant->nom}}" placeholder="{{trans('etudiant.l_name')}}">
+                            <input required type="text" class="form-control" id="nom" name="nom" value="{{$etudiant->nom}}" placeholder="{{trans('etudiant.l_name')}}">
 
                         </div>
                         <div class="form-group">
-                            <label for="prenom">{{trans('etudiant.f_name')}}</label>
+                            <label required for="prenom">{{trans('etudiant.f_name')}}</label>
                             <input type="text" class="form-control" value="{{$etudiant->prenom}}"  id="prenom" name="prenom" placeholder="{{trans('etudiant.f_name')}}">
                         </div>
                         <div class="form-group">
