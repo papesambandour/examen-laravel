@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <label for="email">{{trans('commun.email')}}</label>
 
-                            <input required type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" name="{{trans('commun.email')}}" placeholder="email" value="{{ old('email') }}" >
+                            <input required type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" name="email" placeholder="{{trans('commun.email')}}" value="{{ old('email') }}" >
                             @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
